@@ -1,0 +1,10 @@
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\bin\Debug\WMVConverter.exe.config
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\bin\Debug\WMVConverter.exe
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\bin\Debug\WMVConverter.pdb
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.csprojResolveAssemblyReference.cache
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.Form1.resources
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.Properties.Resources.resources
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.csproj.GenerateResource.Cache
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.exe
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.pdb
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\bin\Debug\NReco.VideoConverter.dll
