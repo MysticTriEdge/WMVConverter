@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tbSaveVidLocation = new System.Windows.Forms.TextBox();
             this.btnConvert = new System.Windows.Forms.Button();
             this.btnSetVidLocation = new System.Windows.Forms.Button();
@@ -51,6 +52,7 @@
             this.tbOtherExt = new System.Windows.Forms.TextBox();
             this.cbxOther = new System.Windows.Forms.CheckBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rbOriginal = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -127,9 +129,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(10, 86);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(52, 13);
+            this.label5.Size = new System.Drawing.Size(55, 13);
             this.label5.TabIndex = 10;
-            this.label5.Text = "Pixel Size";
+            this.label5.Text = "Pixel Size:";
             // 
             // tbAudioSample
             // 
@@ -163,12 +165,10 @@
             // rbhd1080
             // 
             this.rbhd1080.AutoSize = true;
-            this.rbhd1080.Checked = true;
             this.rbhd1080.Location = new System.Drawing.Point(215, 86);
             this.rbhd1080.Name = "rbhd1080";
             this.rbhd1080.Size = new System.Drawing.Size(78, 17);
             this.rbhd1080.TabIndex = 14;
-            this.rbhd1080.TabStop = true;
             this.rbhd1080.Text = "1920x1080";
             this.rbhd1080.UseVisualStyleBackColor = true;
             // 
@@ -291,6 +291,7 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.rbOriginal);
             this.groupBox3.Controls.Add(this.tbAudioSample);
             this.groupBox3.Controls.Add(this.label5);
             this.groupBox3.Controls.Add(this.rbhd1080);
@@ -306,6 +307,18 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Set Variables";
             // 
+            // rbOriginal
+            // 
+            this.rbOriginal.AutoSize = true;
+            this.rbOriginal.Checked = true;
+            this.rbOriginal.Location = new System.Drawing.Point(68, 108);
+            this.rbOriginal.Name = "rbOriginal";
+            this.rbOriginal.Size = new System.Drawing.Size(111, 17);
+            this.rbOriginal.TabIndex = 15;
+            this.rbOriginal.TabStop = true;
+            this.rbOriginal.Text = "Keep Original Size";
+            this.rbOriginal.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,6 +328,8 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnConvert);
             this.Controls.Add(this.groupBox3);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Video Converter";
             this.groupBox1.ResumeLayout(false);
@@ -351,6 +366,7 @@
         private System.Windows.Forms.TextBox tbVidLocation;
         private System.Windows.Forms.TextBox tbOtherExt;
         private System.Windows.Forms.CheckBox cbxOther;
+        private System.Windows.Forms.RadioButton rbOriginal;
     }
 }
 

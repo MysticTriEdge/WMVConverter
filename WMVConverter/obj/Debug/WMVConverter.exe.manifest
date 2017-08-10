@@ -55,14 +55,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WMVConverter.exe" size="27582392">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="WMVConverter.exe" size="27615672">
       <assemblyIdentity name="WMVConverter" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>6M87O25RncSgbVcrQsXoU7d0OVomvZ5JjGqVSmm9cSY=</dsig:DigestValue>
+        <dsig:DigestValue>GiNmMzJD9Uip35wtWQTDlsVVL9avFcO3gVKmaoHJIe4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

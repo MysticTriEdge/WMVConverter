@@ -125,17 +125,21 @@ namespace WMVConverter
             string pixelsize = "";
             string ext = tbOtherExt.Text;
 
-            if(rbhd480.Checked == true)
+            if (rbhd480.Checked == true)
             {
-                 pixelsize = "hd480";
+                pixelsize = "hd480";
             }
-            else if(rbhd720.Checked == true)
+            else if (rbhd720.Checked == true)
             {
-                 pixelsize = "hd720";
+                pixelsize = "hd720";
             }
             else if (rbhd1080.Checked == true)
             {
-                 pixelsize = "hd1080";
+                pixelsize = "hd1080";
+            }
+            else if (rbOriginal.Checked == true)
+            {
+                pixelsize = null;
             }
 
             try
