@@ -8,3 +8,8 @@ C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConve
 C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.exe
 C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.pdb
 C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\bin\Debug\NReco.VideoConverter.dll
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\bin\Debug\WMVConverter.exe.manifest
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\bin\Debug\WMVConverter.application
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.exe.manifest
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\obj\Debug\WMVConverter.application
+C:\Users\grimwoodb\Documents\GitHub\WMVConverter\WMVConverter\bin\Debug\dll\NReco.VideoConverter.dll

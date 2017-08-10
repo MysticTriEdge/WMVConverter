@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.tbVidLocation = new System.Windows.Forms.TextBox();
             this.tbSaveVidLocation = new System.Windows.Forms.TextBox();
             this.btnConvert = new System.Windows.Forms.Button();
             this.btnSetVidLocation = new System.Windows.Forms.Button();
@@ -43,37 +40,25 @@
             this.rbhd480 = new System.Windows.Forms.RadioButton();
             this.rbhd720 = new System.Windows.Forms.RadioButton();
             this.rbhd1080 = new System.Windows.Forms.RadioButton();
+            this.cbxMP4 = new System.Windows.Forms.CheckBox();
+            this.cbxWMV = new System.Windows.Forms.CheckBox();
+            this.cbxWholeFolder = new System.Windows.Forms.RadioButton();
+            this.cbxFiles = new System.Windows.Forms.RadioButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.tbVidLocation = new System.Windows.Forms.TextBox();
+            this.lbxVideostoConvert = new System.Windows.Forms.ListBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.tbOtherExt = new System.Windows.Forms.TextBox();
+            this.cbxOther = new System.Windows.Forms.CheckBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(103, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Raw Video Location";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 93);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(106, 13);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Save Video Location";
-            // 
-            // tbVidLocation
-            // 
-            this.tbVidLocation.Location = new System.Drawing.Point(13, 56);
-            this.tbVidLocation.Name = "tbVidLocation";
-            this.tbVidLocation.ReadOnly = true;
-            this.tbVidLocation.Size = new System.Drawing.Size(254, 20);
-            this.tbVidLocation.TabIndex = 2;
             // 
             // tbSaveVidLocation
             // 
-            this.tbSaveVidLocation.Location = new System.Drawing.Point(13, 130);
+            this.tbSaveVidLocation.Location = new System.Drawing.Point(6, 19);
             this.tbSaveVidLocation.Name = "tbSaveVidLocation";
             this.tbSaveVidLocation.ReadOnly = true;
             this.tbSaveVidLocation.Size = new System.Drawing.Size(254, 20);
@@ -81,7 +66,7 @@
             // 
             // btnConvert
             // 
-            this.btnConvert.Location = new System.Drawing.Point(273, 294);
+            this.btnConvert.Location = new System.Drawing.Point(280, 378);
             this.btnConvert.Name = "btnConvert";
             this.btnConvert.Size = new System.Drawing.Size(75, 23);
             this.btnConvert.TabIndex = 4;
@@ -91,7 +76,7 @@
             // 
             // btnSetVidLocation
             // 
-            this.btnSetVidLocation.Location = new System.Drawing.Point(273, 54);
+            this.btnSetVidLocation.Location = new System.Drawing.Point(266, 43);
             this.btnSetVidLocation.Name = "btnSetVidLocation";
             this.btnSetVidLocation.Size = new System.Drawing.Size(75, 23);
             this.btnSetVidLocation.TabIndex = 5;
@@ -101,7 +86,7 @@
             // 
             // btnSetSaveLocation
             // 
-            this.btnSetSaveLocation.Location = new System.Drawing.Point(273, 128);
+            this.btnSetSaveLocation.Location = new System.Drawing.Point(266, 19);
             this.btnSetSaveLocation.Name = "btnSetSaveLocation";
             this.btnSetSaveLocation.Size = new System.Drawing.Size(75, 23);
             this.btnSetSaveLocation.TabIndex = 6;
@@ -112,7 +97,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 172);
+            this.label3.Location = new System.Drawing.Point(10, 22);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(62, 13);
             this.label3.TabIndex = 7;
@@ -120,17 +105,18 @@
             // 
             // tbFrameRate
             // 
-            this.tbFrameRate.Location = new System.Drawing.Point(81, 169);
+            this.tbFrameRate.Location = new System.Drawing.Point(78, 19);
             this.tbFrameRate.MaxLength = 2;
             this.tbFrameRate.Name = "tbFrameRate";
             this.tbFrameRate.Size = new System.Drawing.Size(35, 20);
             this.tbFrameRate.TabIndex = 8;
             this.tbFrameRate.Text = "25";
+            this.tbFrameRate.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbFrameRate_KeyPress);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 204);
+            this.label4.Location = new System.Drawing.Point(9, 54);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
             this.label4.TabIndex = 9;
@@ -139,7 +125,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 236);
+            this.label5.Location = new System.Drawing.Point(10, 86);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(52, 13);
             this.label5.TabIndex = 10;
@@ -147,7 +133,7 @@
             // 
             // tbAudioSample
             // 
-            this.tbAudioSample.Location = new System.Drawing.Point(116, 201);
+            this.tbAudioSample.Location = new System.Drawing.Point(113, 51);
             this.tbAudioSample.MaxLength = 5;
             this.tbAudioSample.Name = "tbAudioSample";
             this.tbAudioSample.Size = new System.Drawing.Size(55, 20);
@@ -157,7 +143,7 @@
             // rbhd480
             // 
             this.rbhd480.AutoSize = true;
-            this.rbhd480.Location = new System.Drawing.Point(72, 236);
+            this.rbhd480.Location = new System.Drawing.Point(68, 86);
             this.rbhd480.Name = "rbhd480";
             this.rbhd480.Size = new System.Drawing.Size(66, 17);
             this.rbhd480.TabIndex = 12;
@@ -167,7 +153,7 @@
             // rbhd720
             // 
             this.rbhd720.AutoSize = true;
-            this.rbhd720.Location = new System.Drawing.Point(144, 236);
+            this.rbhd720.Location = new System.Drawing.Point(137, 86);
             this.rbhd720.Name = "rbhd720";
             this.rbhd720.Size = new System.Drawing.Size(72, 17);
             this.rbhd720.TabIndex = 13;
@@ -178,7 +164,7 @@
             // 
             this.rbhd1080.AutoSize = true;
             this.rbhd1080.Checked = true;
-            this.rbhd1080.Location = new System.Drawing.Point(222, 236);
+            this.rbhd1080.Location = new System.Drawing.Point(215, 86);
             this.rbhd1080.Name = "rbhd1080";
             this.rbhd1080.Size = new System.Drawing.Size(78, 17);
             this.rbhd1080.TabIndex = 14;
@@ -186,38 +172,162 @@
             this.rbhd1080.Text = "1920x1080";
             this.rbhd1080.UseVisualStyleBackColor = true;
             // 
+            // cbxMP4
+            // 
+            this.cbxMP4.AutoSize = true;
+            this.cbxMP4.Checked = true;
+            this.cbxMP4.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbxMP4.Location = new System.Drawing.Point(6, 45);
+            this.cbxMP4.Name = "cbxMP4";
+            this.cbxMP4.Size = new System.Drawing.Size(48, 17);
+            this.cbxMP4.TabIndex = 15;
+            this.cbxMP4.Text = "MP4";
+            this.cbxMP4.UseVisualStyleBackColor = true;
+            // 
+            // cbxWMV
+            // 
+            this.cbxWMV.AutoSize = true;
+            this.cbxWMV.Checked = true;
+            this.cbxWMV.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.cbxWMV.Location = new System.Drawing.Point(54, 45);
+            this.cbxWMV.Name = "cbxWMV";
+            this.cbxWMV.Size = new System.Drawing.Size(53, 17);
+            this.cbxWMV.TabIndex = 16;
+            this.cbxWMV.Text = "WMV";
+            this.cbxWMV.UseVisualStyleBackColor = true;
+            // 
+            // cbxWholeFolder
+            // 
+            this.cbxWholeFolder.AutoSize = true;
+            this.cbxWholeFolder.Checked = true;
+            this.cbxWholeFolder.Location = new System.Drawing.Point(6, 22);
+            this.cbxWholeFolder.Name = "cbxWholeFolder";
+            this.cbxWholeFolder.Size = new System.Drawing.Size(121, 17);
+            this.cbxWholeFolder.TabIndex = 17;
+            this.cbxWholeFolder.TabStop = true;
+            this.cbxWholeFolder.Text = "Select Whole Folder";
+            this.cbxWholeFolder.UseVisualStyleBackColor = true;
+            this.cbxWholeFolder.CheckedChanged += new System.EventHandler(this.cbxWholeFolder_CheckedChanged);
+            // 
+            // cbxFiles
+            // 
+            this.cbxFiles.AutoSize = true;
+            this.cbxFiles.Location = new System.Drawing.Point(137, 22);
+            this.cbxFiles.Name = "cbxFiles";
+            this.cbxFiles.Size = new System.Drawing.Size(74, 17);
+            this.cbxFiles.TabIndex = 18;
+            this.cbxFiles.Text = "Select File";
+            this.cbxFiles.UseVisualStyleBackColor = true;
+            this.cbxFiles.CheckedChanged += new System.EventHandler(this.cbxFiles_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.tbVidLocation);
+            this.groupBox1.Controls.Add(this.lbxVideostoConvert);
+            this.groupBox1.Controls.Add(this.cbxFiles);
+            this.groupBox1.Controls.Add(this.cbxWholeFolder);
+            this.groupBox1.Controls.Add(this.btnSetVidLocation);
+            this.groupBox1.Location = new System.Drawing.Point(7, 11);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(349, 147);
+            this.groupBox1.TabIndex = 19;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Select Video\'s to Convert";
+            // 
+            // tbVidLocation
+            // 
+            this.tbVidLocation.Location = new System.Drawing.Point(6, 45);
+            this.tbVidLocation.Name = "tbVidLocation";
+            this.tbVidLocation.ReadOnly = true;
+            this.tbVidLocation.Size = new System.Drawing.Size(250, 20);
+            this.tbVidLocation.TabIndex = 20;
+            // 
+            // lbxVideostoConvert
+            // 
+            this.lbxVideostoConvert.Enabled = false;
+            this.lbxVideostoConvert.FormattingEnabled = true;
+            this.lbxVideostoConvert.Location = new System.Drawing.Point(5, 45);
+            this.lbxVideostoConvert.Name = "lbxVideostoConvert";
+            this.lbxVideostoConvert.Size = new System.Drawing.Size(191, 95);
+            this.lbxVideostoConvert.TabIndex = 19;
+            this.lbxVideostoConvert.Visible = false;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.tbOtherExt);
+            this.groupBox2.Controls.Add(this.cbxOther);
+            this.groupBox2.Controls.Add(this.cbxWMV);
+            this.groupBox2.Controls.Add(this.cbxMP4);
+            this.groupBox2.Controls.Add(this.btnSetSaveLocation);
+            this.groupBox2.Controls.Add(this.tbSaveVidLocation);
+            this.groupBox2.Location = new System.Drawing.Point(7, 164);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(348, 71);
+            this.groupBox2.TabIndex = 20;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Select Save Location";
+            // 
+            // tbOtherExt
+            // 
+            this.tbOtherExt.Location = new System.Drawing.Point(273, 43);
+            this.tbOtherExt.MaxLength = 5;
+            this.tbOtherExt.Name = "tbOtherExt";
+            this.tbOtherExt.Size = new System.Drawing.Size(60, 20);
+            this.tbOtherExt.TabIndex = 19;
+            this.tbOtherExt.Text = ".";
+            this.tbOtherExt.Visible = false;
+            this.tbOtherExt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.tbOtherExt_KeyPress);
+            // 
+            // cbxOther
+            // 
+            this.cbxOther.AutoSize = true;
+            this.cbxOther.Location = new System.Drawing.Point(144, 45);
+            this.cbxOther.Name = "cbxOther";
+            this.cbxOther.Size = new System.Drawing.Size(132, 17);
+            this.cbxOther.TabIndex = 17;
+            this.cbxOther.Text = "Other(Must start with .)";
+            this.cbxOther.UseVisualStyleBackColor = true;
+            this.cbxOther.CheckedChanged += new System.EventHandler(this.cbxOther_CheckedChanged);
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.tbAudioSample);
+            this.groupBox3.Controls.Add(this.label5);
+            this.groupBox3.Controls.Add(this.rbhd1080);
+            this.groupBox3.Controls.Add(this.label4);
+            this.groupBox3.Controls.Add(this.rbhd720);
+            this.groupBox3.Controls.Add(this.tbFrameRate);
+            this.groupBox3.Controls.Add(this.rbhd480);
+            this.groupBox3.Controls.Add(this.label3);
+            this.groupBox3.Location = new System.Drawing.Point(7, 241);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(348, 131);
+            this.groupBox3.TabIndex = 21;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Set Variables";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(360, 329);
-            this.Controls.Add(this.rbhd1080);
-            this.Controls.Add(this.rbhd720);
-            this.Controls.Add(this.rbhd480);
-            this.Controls.Add(this.tbAudioSample);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.tbFrameRate);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnSetSaveLocation);
-            this.Controls.Add(this.btnSetVidLocation);
+            this.ClientSize = new System.Drawing.Size(368, 412);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.btnConvert);
-            this.Controls.Add(this.tbSaveVidLocation);
-            this.Controls.Add(this.tbVidLocation);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.groupBox3);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Video Converter";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbVidLocation;
         private System.Windows.Forms.TextBox tbSaveVidLocation;
         private System.Windows.Forms.Button btnConvert;
         private System.Windows.Forms.Button btnSetVidLocation;
@@ -230,6 +340,17 @@
         private System.Windows.Forms.RadioButton rbhd480;
         private System.Windows.Forms.RadioButton rbhd720;
         private System.Windows.Forms.RadioButton rbhd1080;
+        private System.Windows.Forms.CheckBox cbxMP4;
+        private System.Windows.Forms.CheckBox cbxWMV;
+        private System.Windows.Forms.RadioButton cbxWholeFolder;
+        private System.Windows.Forms.RadioButton cbxFiles;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ListBox lbxVideostoConvert;
+        private System.Windows.Forms.TextBox tbVidLocation;
+        private System.Windows.Forms.TextBox tbOtherExt;
+        private System.Windows.Forms.CheckBox cbxOther;
     }
 }
 
